@@ -1,0 +1,134 @@
+/* Main */
+html{
+    --border: 5px white solid;
+    --focus: #ffc000;
+}
+.center{
+    align-items: center;
+    align-content: center;
+    justify-items: center;
+    justify-content: center;
+}
+body{
+    background-color: black;
+    display: flex;
+    margin: 0;
+}
+form{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+.body{
+    display: flex;
+    flex-direction: column;
+    gap: 3vh;
+    width: 75%;
+    max-width: 1000px;
+}
+
+/* Profiles */
+.contestant{
+    aspect-ratio: 2 / 1;
+    width: 100%;
+    border: var(--border);
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+.dividers{
+    padding: 10px;
+}
+.dividers>div{
+    width: 100%;
+    height: 100%;
+}
+#img{
+    background-size: contain;
+    background-position: center;
+}
+#txt{
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 1.5rem;
+    color: white;
+}
+
+/* Button Stuff */
+form:has(#fork>input:checked) + button{
+    opacity: 100%;
+    cursor: pointer;
+}
+form:has(#fork>input:checked) + button:hover{
+    background-color: white;
+    color: black;
+}
+form:has(#fork>input:checked) + button:active{
+    background-color: var(--focus);
+    border-color: var(--focus);
+    color: black;
+}
+button{
+    opacity: 25%;
+    padding: 10px;
+    background-color: transparent;
+    border: var(--border);
+    border-radius: 2vh;
+    color: white;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 2rem;
+    cursor: not-allowed;
+}
+
+/* Label Stuff */
+label{
+    display: flex;
+    aspect-ratio: 1 / 1;
+    width: 100px;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    border: var(--border);
+    border-radius: 50%;
+    background-repeat: no-repeat;
+    background-size: 75%;
+    background-position: center;
+}
+label>input{
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+}
+label:has(input:checked){
+    border-color: var(--focus);
+}
+
+/* Contestant Images */
+#butterfly{
+    background-image: url(./imgs/icons/butterfly.png);
+}
+#cassette{
+    background-image: url(./imgs/icons/cassette.png);
+}
+#flintlock{
+    background-image: url(./imgs/icons/flintlock.png);
+}
+#fork{
+    background-image: url(./imgs/icons/fork.png);
+}
+#hockeypuck{
+    background-image: url(./imgs/icons/hockeypuck.png);
+}
+#lighter{
+    background-image: url(./imgs/icons/lighter.png);
+}
+#scissors{
+    background-image: url(./imgs/icons/scissors.png);
+}
+#thewind{
+    background: transparent;
+}
+#washer{
+    background-image: url(./imgs/icons/washer.png);
+}
