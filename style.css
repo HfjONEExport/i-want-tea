@@ -91,7 +91,7 @@ label{
     border: var(--border);
     border-radius: 50%;
     background-repeat: no-repeat;
-    background-size: 75%;
+    background-size: 85%;
     background-position: center;
 }
 label>input{
@@ -106,10 +106,10 @@ label:has(input:checked){
 
 /* Contestant Images */
 #butterfly{
-    background-image: url(./imgs/icons/butterfly.png);
+    background-image: url(./imgs/icons/butterfly_knife.png);
 }
 #cassette{
-    background-image: url(./imgs/icons/cassette.png);
+    background-image: url(./imgs/icons/cassette_tape.png);
 }
 #flintlock{
     background-image: url(./imgs/icons/flintlock.png);
@@ -118,7 +118,7 @@ label:has(input:checked){
     background-image: url(./imgs/icons/fork.png);
 }
 #hockeypuck{
-    background-image: url(./imgs/icons/hockeypuck.png);
+    background-image: url(./imgs/icons/hockey_puck.png);
 }
 #lighter{
     background-image: url(./imgs/icons/lighter.png);
@@ -130,5 +130,5 @@ label:has(input:checked){
     background: transparent;
 }
 #washer{
-    background-image: url(./imgs/icons/washer.png);
+    background-image: url(./imgs/icons/washing_machine.png);
 }
